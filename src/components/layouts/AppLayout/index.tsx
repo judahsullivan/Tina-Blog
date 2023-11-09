@@ -6,7 +6,7 @@ export default function AppLayout({ children }: { children: ReactNode }) {
   return (
     <Fragment>
       <Nav />
-      <div className="max-w-6xl mx-auto">{children}</div>
+      <div className="w-full ">{children}</div>
     </Fragment>
   );
 }

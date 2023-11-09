@@ -7,9 +7,6 @@ export default function Home() {
   return (
     <PageLayout>
       <Hero />
-      <div className="min-h-[200dvh] overflow-x-clip"></div>
-      {/* <About /> */}
-      {/* <AnimatedRole /> */}
     </PageLayout>
   );
 }
