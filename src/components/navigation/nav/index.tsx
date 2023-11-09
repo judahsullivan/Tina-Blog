@@ -7,17 +7,15 @@ export default function Nav(props: {}) {
   const [isOpen, toggleOpen] = useCycle(false, true);
 
   return (
-    <header className="w-full h-10 ">
-      <div className="flex h-full relative  px-5 items-center justify-between ">
-        <p className="text-sm">
-          Coded by <span>Judah Sullivan</span>
-        </p>
+    <header className="absolute top-0 z-20">
+      <p className="text-sm">
+        Coded by <span className="uppercase">Judah Sullivan</span>
+      </p>
 
-        <motion.nav initial={false} animate={isOpen ? 'open' : 'closed'}>
-          <Menu />
-          <ToggleButton toggle={() => toggleOpen()} />
-        </motion.nav>
-      </div>
+      <motion.nav initial={false} animate={isOpen ? 'open' : 'closed'}>
+        <Menu />
+        <ToggleButton toggle={() => toggleOpen()} />
+      </motion.nav>
     </header>
   );
 }

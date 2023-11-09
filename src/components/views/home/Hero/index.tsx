@@ -24,13 +24,14 @@ export default function Hero() {
             <motion.div className="">
               <MaskedText>
                 <ParallaxText baseVelocity={-5}> FrontEnd Engineer - </ParallaxText>
+              </MaskedText>
+              <MaskedText>
                 <ParallaxText baseVelocity={-5}> UX-UI Developer - </ParallaxText>
               </MaskedText>
             </motion.div>
           </motion.div>
-          {/* <Banner /> */}
         </motion.div>
-        <div className="absolute right-0  md:top-32 w-[200px] md:w-[300px]">
+        <div className="absolute right-0  md:top-60 lg:top-32 w-[200px] md:w-[250px] lg:w-[300px]">
           <Image
             width={400}
             height={400}
