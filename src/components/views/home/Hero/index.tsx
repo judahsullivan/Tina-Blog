@@ -1,17 +1,14 @@
 import ParallaxText from '@/components/animations/banner';
-import Image from 'next/image';
-import HeroImage from '@/public/images/hero.webp';
 import MaskedText from '@/components/animations/maskedText';
-import { useScroll, useTransform, motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import {  motion } from 'framer-motion';
 
 export default function Hero() {
   return (
     <motion.section className="w-full relative overflow-hidden min-h-screen p-2 mx-auto  ">
-      <div className=" pt-[8rem]">
+      <div className=" pt-[6rem] flex-col flex gap-5">
         <MaskedText>
-          <p className="text-lg ">Hi there 👋🏾!</p>
-          <h4 className="text-4xl font-bold tracking-wide">Judah Sullivan</h4>
+          <p className="text-2xl ">Hi there 👋🏾!</p>
+          <h4 className="text-6xl font-bold tracking-wide">Judah Sullivan</h4>
         </MaskedText>
         <MaskedText>
           <ParallaxText baseVelocity={-5}> FrontEnd Engineer - </ParallaxText>
@@ -19,19 +16,17 @@ export default function Hero() {
         <MaskedText>
           <ParallaxText baseVelocity={-5}> UX-UI Developer - </ParallaxText>
         </MaskedText>
-        <div className="pt-5">
+        <div className="">
           <MaskedText>
-            <p>
-              Passionate <span>developer</span> ,with a skill for building <span>beautiful</span>{' '}
+            <p className="text-xl leading-relaxed tracking-wide">
+              Passionate <span>developer</span>, with a skill for building <span>beautiful</span>{' '}
               and <span>interactive</span> websites!
             </p>
           </MaskedText>
-          <div className=" max-w-lg h-  flex flex-col">
-            <div className="flex gap-2 ">
+          <div className=" max-w-lg mt-10 gap-2 flex flex-col">
               <MaskedText>
                 <p className=" underline underline-offset-4">Like to Discuss More?</p>
               </MaskedText>
-            </div>
             <div className="pt-1">
               <motion.button
                 initial={{
@@ -66,15 +61,6 @@ export default function Hero() {
               </motion.button>
             </div>
           </div>
-        </div>
-        <div className="absolute right-0  md:top-60 w-[250px] lg:w-[300px]">
-          <Image
-            width={400}
-            height={400}
-            className="object-cover"
-            src={HeroImage}
-            alt="Ai Image of me"
-          />
         </div>
       </div>
     </motion.section>
