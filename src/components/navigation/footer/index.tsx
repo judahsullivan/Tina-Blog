@@ -5,11 +5,12 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="">
+    <footer className="flex-col flex justify-between min-h-screen">
+      <h1 className="text-4xl mt-10 md:text-6xl font-basement p-4">Lets Get In Touch</h1>
       {footerData.map((footer, index) => (
         <div key={index} className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-          <div className="flex justify-between w-full flex-col-reverse md:flex-row gap-10 items-center md:items-start">
-            <div className="grid grid-cols-2 gap-8 w-full text-center md:text-left">
+          <div className="flex justify-between w-full flex-col-reverse md:flex-row gap-5 items-center md:items-start">
+            <div className="grid grid-cols-2 gap-5 w-full text-center md:text-left">
               {footer.pageLinks && (
                 <div key={footer.pageLinks.sectionName}>
                   <h2 className="mb-6 font-grotesque font-semibold text-theme-accent uppercase  text-xl underline underline-offset-2">
@@ -83,14 +84,14 @@ export default function Footer() {
           </div>
 
           {/* Your remaining content */}
-          <hr className="my-6 border-theme-base sm:mx-auto lg:my-8" />
+          <hr className="my-2 border-theme-base sm:mx-auto lg:my-4" />
 
           <div className="flex flex-col md:flex-row items-center sm:justify-between">
             <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
               © 2023 <span className="text-theme-accent">Judah Sullivan™</span>. All Rights
               Reserved.
             </span>
-            <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+            <div className="flex mt-2  space-x-5 sm:justify-center ">
               {footer.externalLinks?.links?.map((link, index) => (
                 <Link href={link?.url} key={index} target="_blank">
                   {link?.icon && link.icon({ size: 20 })}
