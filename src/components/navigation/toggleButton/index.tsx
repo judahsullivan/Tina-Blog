@@ -8,7 +8,7 @@ interface ButtonProps {
 export default function ToggleButton({ toggle }: ButtonProps) {
   return (
     <button
-      className="w-14 h-14 z-10 right-3 top-3 fixed flex border-theme-accent border-[2px] gap-y-1.5 flex-col items-center justify-center bg-theme-inverted rounded-full"
+      className="w-14 h-14 z-10 right-3 top-3 fixed flex border-theme-accent border-[2px] gap-y-1.5 flex-col items-center justify-center bg-theme-base rounded-full"
       onClick={toggle}
     >
       <motion.span
@@ -19,7 +19,7 @@ export default function ToggleButton({ toggle }: ButtonProps) {
           },
           closed: {}
         }}
-        className="w-7  border border-theme-inverted rounded-lg "
+        className="w-7  border border-theme-base rounded-lg "
       />
       <motion.span
         variants={{
@@ -29,7 +29,7 @@ export default function ToggleButton({ toggle }: ButtonProps) {
           },
           closed: {}
         }}
-        className="w-7  border border-theme-inverted rounded-lg "
+        className="w-7  border border-theme-base rounded-lg "
       />
     </button>
   );
