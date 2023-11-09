@@ -8,7 +8,7 @@ export default function Nav(props: {}) {
 
   return (
     <header className="absolute top-0 z-20">
-      <p className="text-sm">
+      <p className="text-sm px-2">
         Coded by <span className="uppercase">Judah Sullivan</span>
       </p>
 
