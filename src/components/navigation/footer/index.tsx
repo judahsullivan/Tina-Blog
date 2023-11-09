@@ -68,8 +68,8 @@ export default function Footer() {
               </div>
             </div>
             <div>
-              <a
-                href="https://flowbite.com/"
+              <Link
+                href="/"
                 className="flex items-center bg-theme-inverted relative  w-[170px] h-[170px] overflow-hidden rounded-full"
               >
                 <Image
@@ -78,7 +78,7 @@ export default function Footer() {
                   alt="Image of me created in MidJourney"
                   priority
                 />
-              </a>
+              </Link>
             </div>
           </div>
 
