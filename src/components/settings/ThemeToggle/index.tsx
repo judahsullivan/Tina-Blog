@@ -26,7 +26,7 @@ export default function ThemeToggle() {
           className={`p-2 ${
             theme === option.value
               ? "bg-theme-accent rounded-md text-white"
-              : "text-theme-inverted"
+              : "text-theme-base"
           }`}
           onClick={() => setTheme(option.value)}
           data-test-id="theme-selector"

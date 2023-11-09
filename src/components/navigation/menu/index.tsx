@@ -8,18 +8,18 @@ const menuVariants = {
       type: 'spring',
       stiffness: 20,
       restDelta: 2,
-      ease: [0.65, 0, 0.35, 1],
-    },
+      ease: [0.65, 0, 0.35, 1]
+    }
   }),
   closed: {
-    clipPath: 'circle(30px at calc(100% - 45px) 45px)',
+    clipPath: 'circle(20px at calc(100% - 45px) 45px)',
     transition: {
       delay: 0.5,
       duratio: 1,
       type: 'spring',
       stiffness: 400,
       damping: 40,
-      ease: [0.65, 0, 0.35, 1],
+      ease: [0.65, 0, 0.35, 1]
     }
   }
 };
@@ -35,7 +35,6 @@ export default function Menu() {
 
         <ThemeToggle />
       </div>
-
     </motion.div>
   );
 }
