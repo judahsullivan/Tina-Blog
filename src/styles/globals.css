@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Color references 
+ 
+ * */
+
+@layer base {
+  :root {
+    /* Base bg Color  #EBF6FF -- Alice Blue*/
+    --theme-bg: 240, 243, 250;
+
+    /* InvertedBase dark bg Color  #05080F  -- Rich Black */
+    --theme-bg-inverted: 5, 8, 15;
+
+    /* Base text Color  */
+    --theme-base: 5, 8, 15;
+    --theme-base-inverted: 240, 243, 250;
+
+    /*  Accent 1 Color #0065b8 -Crimson */
+    --theme-accent: 0, 101, 184;
+  }
+
+  :root.dark {
+    /* Base dark bg Color  #05080F  -- Rich Black */
+    --theme-bg: 5, 8, 15;
+
+    /* InvertedBase bg Color  #EBF6FF -- Alice Blue*/
+    --theme-bg-inverted: 240, 243, 250;
+
+    /* Dark Text  */
+    --theme-base: 240, 243, 250;
+    --theme-base-inverted: 5, 8, 15;
+  }
+
+  @font-face {
+    font-family: Grotesque;
+    src: url(../../public/fonts/basement-grotesque/BasementGrotesque-Black_v1.202.woff)
+      format('woff');
+  }
+
+  @font-face {
+    font-family: Basement-Grotesque;
+    src: url(../../public/fonts/basement-grotesque/BasementGrotesque-Black_v1.202.woff2)
+      format('woff2');
+  }
+
+  html,
+  body {
+    @apply w-full min-h-[100dvh]  text-lg font-light scroll-smooth  bg-theme-base font-aileron text-theme-base;
+  }
+
+  h1 {
+    @apply text-theme-accent uppercase;
+  }
+  p > span {
+    @apply text-theme-accent font-bold capitalize;
+  }
+}

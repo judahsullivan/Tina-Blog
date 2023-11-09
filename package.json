@@ -1,0 +1,47 @@
+{
+  "name": "judahsullivan.dev",
+  "version": "0.1.0",
+  "private": true,
+  "description": "My Portfolio and blog site built with nextjs, tailwindcss, framer-motion, and tinacms",
+  "author": "Judah Sullivan",
+  "license": "MIT",
+  "repository": "https://github.com/judahsullivan/judahsullivan.dev",
+  "keywords": [
+    "nextjs",
+    "framermotion",
+    "tailwindcss",
+    "portfolio",
+    "blog",
+    "tinacms"
+  ],
+  "homepage": "https://judahsullivan.dev",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@motionone/utils": "^10.16.3",
+    "@tailwindcss/typography": "^0.5.10",
+    "framer-motion": "^10.16.4",
+    "gsap": "^3.12.2",
+    "next": "13.5.6",
+    "next-themes": "^0.2.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^4.11.0",
+    "react-intersection-observer": "^9.5.2"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10",
+    "postcss": "^8",
+    "tailwindcss": "^3",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.6"
+  }
+}
