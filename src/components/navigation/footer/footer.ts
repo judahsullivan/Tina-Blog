@@ -1,5 +1,5 @@
-import { IconType } from "react-icons";
-import { SiGithub, SiGmail, SiLinkedin, SiYoutube } from 'react-icons/si';
+import { IconType } from 'react-icons';
+import { SiGithub, SiGmail, SiLinkedin, SiIndeed, SiYoutube } from 'react-icons/si';
 
 type Link = {
   key: string;
@@ -28,18 +28,34 @@ export const footerData: FooterProps[] = [
         { key: 'home', name: 'Home', url: '/home' },
         { key: 'about', name: 'About', url: '/about' },
         { key: 'blog', name: 'Blog', url: '/blog' },
-        { key: 'projects', name: 'Projects', url: '/projects' }
+        { key: 'projects', name: 'Projects', url: '/projects' },
+        { key: 'contact', name: 'Contact Me', url: '/contact' }
       ]
     },
     externalLinks: {
       sectionName: 'Social',
       links: [
-        { key: 'github', name: 'GitHub', url: 'https://github.com', icon: SiGithub },
-        { key: 'gmail', name: 'Gmail', url: 'https://www.google.com', icon: SiGmail },
-        { key: 'linkedin', name: 'LinkedIn', url: 'https://www.linkedin.com', icon: SiLinkedin },
-        { key: 'youtube', name: 'Youtube', url: 'https://www.youtube.com', icon: SiYoutube }
+        { key: 'github', name: 'GitHub', url: 'https://github.com/judahsullivan', icon: SiGithub },
+        {
+          key: 'indeed',
+          name: 'Indeed',
+          url: 'https://profile.indeed.com/?hl=en_US&co=US&from=gnav-homepage&_ga=2.149244277.296854731.1699557307-493382719.1695926166',
+          icon: SiIndeed
+        },
+        { key: 'gmail', name: 'Gmail', url: 'mailto:judahsullivan.dev@gmail.com', icon: SiGmail },
+        {
+          key: 'linkedin',
+          name: 'LinkedIn',
+          url: 'https://www.linkedin.com/in/judahsullivan',
+          icon: SiLinkedin
+        },
+        {
+          key: 'youtube',
+          name: 'Youtube',
+          url: 'https://www.youtube.com/channel/UCG0Jz5Ibm4kaX_TKQ2DtxfA',
+          icon: SiYoutube
+        }
       ]
     }
-  },
+  }
 ];
-

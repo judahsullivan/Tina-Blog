@@ -18,9 +18,9 @@ export default function Footer() {
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                     {footer.pageLinks.links?.map((link, index) => (
                       <li key={index} className="mb-4">
-                        <a href={link?.url} className="text-md hover:underline">
+                        <Link passHref href={link?.url} className="text-md hover:underline">
                           {link?.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -34,9 +34,9 @@ export default function Footer() {
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                     {footer.externalLinks.links?.map((link, index) => (
                       <li key={index} className="mb-4">
-                        <a href={link?.url} className="text-md hover:underline">
+                        <Link target="_blank" href={link?.url} className="text-md hover:underline">
                           {link?.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
