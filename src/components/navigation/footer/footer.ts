@@ -1,7 +1,8 @@
 import { IconType } from "react-icons";
-import {SiGithub, SiGmail, SiLinkedin, SiYoutube} from 'react-icons/si'
+import { SiGithub, SiGmail, SiLinkedin, SiYoutube } from 'react-icons/si';
 
 type Link = {
+  key: string;
   name?: string;
   url: string;
   icon?: IconType;
@@ -13,30 +14,32 @@ type FooterSection = {
 };
 
 export type FooterProps = {
+  id: string; // Main key for the array
   pageLinks: FooterSection;
   externalLinks: FooterSection;
 };
 
-export const footerData: FooterProps = {
-  pageLinks: {
-    sectionName: 'Site',
-    links: [
-      { name: 'Home', url: '/home' },
-      { name: 'About', url: '/about' },
-      { name: 'Blog', url: '/about' },
-      { name: 'Projects', url: '/about' }
-    ]
+export const footerData: FooterProps[] = [
+  {
+    id: 'footer',
+    pageLinks: {
+      sectionName: 'Site',
+      links: [
+        { key: 'home', name: 'Home', url: '/home' },
+        { key: 'about', name: 'About', url: '/about' },
+        { key: 'blog', name: 'Blog', url: '/blog' },
+        { key: 'projects', name: 'Projects', url: '/projects' }
+      ]
+    },
+    externalLinks: {
+      sectionName: 'Social',
+      links: [
+        { key: 'github', name: 'GitHub', url: 'https://github.com', icon: SiGithub },
+        { key: 'gmail', name: 'Gmail', url: 'https://www.google.com', icon: SiGmail },
+        { key: 'linkedin', name: 'LinkedIn', url: 'https://www.linkedin.com', icon: SiLinkedin },
+        { key: 'youtube', name: 'Youtube', url: 'https://www.youtube.com', icon: SiYoutube }
+      ]
+    }
   },
-  externalLinks: {
-    sectionName: 'Social',
-    links: [
-      { name: 'GitHub', url: 'https://github.com', icon:SiGithub  },
-      { name: 'Gmail', url: 'https://www.google.com', icon: SiGmail },
-      { name: 'LinkedIn', url: 'https://www.google.com', icon: SiLinkedin },
-      { name: 'Youtube', url: 'https://www.google.com', icon:SiYoutube }
-    ]
-  }
-};
-
-
+];
 
