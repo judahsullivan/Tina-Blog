@@ -1,14 +1,14 @@
 import Image from 'next/image';
-import { FooterProps, footerData } from './footer';
+import { menuData } from './footer';
 import HeroImage from '@/public/images/hero.webp';
 import Link from 'next/link';
 
 export default function Footer() {
   return (
     <footer className="flex-col flex justify-between min-h-screen">
-      <h1 className="text-4xl mt-10 md:text-6xl font-basement p-4">Lets Get In Touch</h1>
-      {footerData.map((footer, index) => (
-        <div key={index} className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <h1 className="px-2 text-4xl w-full mt-10 md:text-6xl font-basement ">Get In Touch</h1>
+      {menuData.map((footer, index) => (
+        <div key={index} className="mx-auto w-full  p-4 py-6 lg:py-8">
           <div className="flex justify-between w-full flex-col-reverse md:flex-row gap-5 items-center md:items-start">
             <div className="grid grid-cols-2 gap-5 w-full text-center md:text-left">
               {footer.pageLinks && (
@@ -62,9 +62,9 @@ export default function Footer() {
                 />
                 <button
                   type="submit"
-                  className="flex-none rounded-md bg-theme-accent px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm"
+                  className="flex-none rounded-md bg-blue-300 cursor-not-allowed px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm"
                 >
-                  Subscribe
+                  temporarily disabled
                 </button>
               </div>
             </div>

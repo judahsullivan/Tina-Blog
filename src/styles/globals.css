@@ -49,7 +49,7 @@
 
   html,
   body {
-    @apply w-full min-h-[100dvh]  font-light scroll-smooth  bg-theme-base font-aileron text-theme-base;
+    @apply w-full min-h-[100dvh] p-0 m-0  font-light scroll-smooth  bg-theme-base font-aileron text-theme-base;
   }
 
   h1 {
