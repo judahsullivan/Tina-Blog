@@ -8,18 +8,18 @@ type Link = {
   icon?: IconType;
 };
 
-type FooterSection = {
+type MenuSection = {
   sectionName: string;
   links: Link[];
 };
 
-export type FooterProps = {
+export type MenuProps = {
   id: string; // Main key for the array
-  pageLinks: FooterSection;
-  externalLinks: FooterSection;
+  pageLinks: MenuSection;
+  externalLinks: MenuSection;
 };
 
-export const footerData: FooterProps[] = [
+export const menuData: MenuProps[] = [
   {
     id: 'footer',
     pageLinks: {
