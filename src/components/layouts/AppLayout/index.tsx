@@ -14,7 +14,7 @@ export default function AppLayout({ children }: { children: ReactNode }) {
   return (
     <Fragment>
       <Nav />
-      <div ref={container}  className="relative p-5">
+      <div className="relative p-5">
 
       {children}
        <div>

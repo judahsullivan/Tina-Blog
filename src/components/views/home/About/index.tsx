@@ -5,7 +5,7 @@ import RoundedButton from '@/components/animations/about/button';
 
 export default function AboutSection() {
   const phrase =
-    'Helping brands to stand out in the digital era. Together we will set the new status quo. No nonsense, always on the cutting edge.';
+    'Enhancing brand presence through front-end expertise and leadership. Collaboratively shaping innovative digital experiences, setting a fresh standard.';
   const description = useRef(null);
   const isInView = useInView(description);
   return (
@@ -33,8 +33,8 @@ export default function AboutSection() {
           })}
         </p>
         <motion.p className="" variants={opacity} animate={isInView ? 'open' : 'closed'}>
-          The combination of my passion for pixel perfect <span>design</span> , <span>code</span> &{' '}
-          <span>interaction</span> positions me in a unique place in the{' '}
+          The combination of my passion for pixel  <span>perfect design</span> , <span> clean code</span> &{' '}
+          <span>user interaction</span> gives me the skillset to set a new height{' '}
           <span>web design world</span>.
         </motion.p>
       </div>
