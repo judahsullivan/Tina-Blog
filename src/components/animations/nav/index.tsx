@@ -9,7 +9,7 @@ export const menuVariants = {
     }
   }),
   closed: {
-    clipPath: 'circle(20px at calc(100% - 45px) 45px)',
+    clipPath: 'circle(30px at calc(100% - 45px) 45px)',
     transition: {
       delay: 0.5,
       duratio: 1,

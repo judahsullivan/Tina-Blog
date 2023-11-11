@@ -2,37 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
- * Color references 
- 
- * */
-
 @layer base {
   :root {
-    /* Base bg Color  #EBF6FF -- Alice Blue*/
-    --theme-bg: 240, 243, 250;
+    /* Light mode colors */
+    --theme-bg: 240, 243, 250; /* #F0F3FA - Light blue-gray background */
+    --theme-bg-inverted: 5, 8, 15; /* #05080F - Dark background for inverted theme */
+    --theme-base: 5, 8, 15; /* #05080F - Dark text color */
+    --theme-base-inverted: 240, 243, 250; /* #F0F3FA - Light text color for inverted theme */
+    --theme-accent: 20, 140, 210; /* #148CD2 - Adjusted shade of blue */
 
-    /* InvertedBase dark bg Color  #05080F  -- Rich Black */
-    --theme-bg-inverted: 5, 8, 15;
+    /* New muted colors */
 
-    /* Base text Color  */
-    --theme-base: 5, 8, 15;
-    --theme-base-inverted: 240, 243, 250;
+    --theme-bg-muted: 40, 40, 40; /* #282828 - Dark gray for backgrounds in dark mode */
 
-    /*  Accent 1 Color #0065b8 -Crimson */
-    --theme-accent: 0, 101, 184;
+    --theme-base-muted: 100, 100, 100; /* #646464 - Medium gray for muted text */
+    --theme-accent-muted: 150, 180, 210; /* #96B4D2 - Muted accent color for hover */
+    --theme-base-muted-inverted: 180, 180, 180; /* #B4B4B4 - Light gray for muted text in dark mode */
+
+    /* Adjusted accent color */
+    --theme-accent: 20, 140, 210; /* #148CD2 - Adjusted shade of blue */
   }
 
   :root.dark {
-    /* Base dark bg Color  #05080F  -- Rich Black */
-    --theme-bg: 5, 8, 15;
+    /* Dark mode colors */
+    --theme-bg: 5, 8, 15; /* #05080F - Dark background color */
+    --theme-bg-inverted: 240, 243, 250; /* #F0F3FA - Light background color in dark mode */
+    --theme-base: 240, 243, 250; /* #F0F3FA - Light text color in dark mode */
+    --theme-base-inverted: 5, 8, 15; /* #05080F - Dark text color in dark mode */
 
-    /* InvertedBase bg Color  #EBF6FF -- Alice Blue*/
-    --theme-bg-inverted: 240, 243, 250;
+    /* New muted colors for dark mode */
 
-    /* Dark Text  */
-    --theme-base: 240, 243, 250;
-    --theme-base-inverted: 5, 8, 15;
+    --theme-bg-muted: 230, 235, 240; /* #E6EBF0 - Light gray-blue for backgrounds */
+    --theme-base-muted: 180, 180, 180; /* #B4B4B4 - Light gray for muted text in dark mode */
+    --theme-accent-muted: 60, 80, 100; /* #3C5064 - Muted accent color for hover */
+    --theme-base-muted-inverted: 100, 100, 100; /* #646464 - Medium gray for muted text */
+
+    --theme-accent: 20, 140, 210; /* #148CD2 - Dark accent color */
   }
 
   @font-face {
@@ -49,12 +54,17 @@
 
   html,
   body {
-    @apply w-full min-h-[100dvh] p-0 m-0  font-light scroll-smooth  bg-theme-base font-aileron text-theme-base;
+    @apply w-full min-h-[100dvh] p-0 m-0  scroll-smooth font-aileron;
+
+    /* Updated background and text colors for both light and dark modes */
+    background-color: rgb(var(--theme-bg));
+    color: rgb(var(--theme-base));
   }
 
   h1 {
     @apply text-theme-accent uppercase;
   }
+
   p > span {
     @apply text-theme-accent font-bold capitalize;
   }

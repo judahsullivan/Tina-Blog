@@ -55,7 +55,7 @@ export default function ParallaxText({ children, baseVelocity = 0.5 }: ParallaxP
 
   return (
     <div className="h-full w-full overflow-x-hidden tracking-[-2px] leading-[.5] gap-0 whitespace-nowrap flex flex-nowrap font-grotesque ">
-      <motion.div className="text-8xl text-theme-accent uppercase  " style={{ x }}>
+      <motion.div className="text-7xl text-theme-accent uppercase  " style={{ x }}>
         <span>{children}</span>
         <span>{children}</span>
         <span>{children}</span>
