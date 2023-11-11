@@ -1,6 +1,6 @@
-import { useTheme } from "next-themes";
-import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useTheme } from 'next-themes';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
@@ -13,9 +13,9 @@ export default function ThemeToggle() {
     return null;
   }
   const themeOptions = [
-    { value: "system", label: "System" },
-    { value: "dark", label: "Dark" },
-    { value: "light", label: "Light" },
+    { value: 'system', label: 'System' },
+    { value: 'dark', label: 'Dark' },
+    { value: 'light', label: 'Light' }
   ];
 
   return (
@@ -25,8 +25,8 @@ export default function ThemeToggle() {
           key={option.value}
           className={`p-2 ${
             theme === option.value
-              ? "bg-theme-accent rounded-md text-white"
-              : "text-theme-base"
+              ? 'bg-theme-accent rounded-md text-white'
+              : 'text-theme-muted-inverted hover:text-theme-muted '
           }`}
           onClick={() => setTheme(option.value)}
           data-test-id="theme-selector"

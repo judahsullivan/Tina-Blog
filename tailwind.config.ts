@@ -7,7 +7,6 @@ function withOpacity(variableName: string) {
   };
 }
 
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: 'class',
   mode: 'jit',
@@ -23,20 +22,27 @@ module.exports = {
           base: withOpacity('--theme-base'),
           inverted: withOpacity('--theme-base-inverted'),
           accent: withOpacity('--theme-accent'),
+          muted: withOpacity('--theme-base-muted'),
+          "accent-muted": withOpacity('--theme-accent-muted')
         }
       },
       textColor: {
         theme: {
           base: withOpacity('--theme-base'),
           accent: withOpacity('--theme-accent'),
-          inverted: withOpacity('--theme-base-inverted')
-        }
+          inverted: withOpacity('--theme-base-inverted'),
+          muted: withOpacity('--theme-base-muted'),
+          "muted-inverted": withOpacity('--theme-base-muted-inverted'),
+          "accent-muted": withOpacity('--theme-accent-muted')
+        },
       },
       backgroundColor: {
         theme: {
           base: withOpacity('--theme-bg'),
           inverted: withOpacity('--theme-bg-inverted'),
-          accent: withOpacity('--theme-accent')
+          accent: withOpacity('--theme-accent'),
+          muted: withOpacity('--theme-bg-muted'),
+          "accent-muted": withOpacity('--theme-accent-muted')
         }
       },
       fontFamily: {
