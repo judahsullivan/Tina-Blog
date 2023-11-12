@@ -1,7 +1,6 @@
 import { useInView, motion } from 'framer-motion';
 import { useRef } from 'react';
 import { slideUp, opacity } from '@/components/animations/about';
-import RoundedButton from '@/components/animations/about/button';
 
 export default function AboutSection() {
   const phrase =
@@ -33,9 +32,9 @@ export default function AboutSection() {
           })}
         </p>
         <motion.p className="" variants={opacity} animate={isInView ? 'open' : 'closed'}>
-          The combination of my passion for pixel  <span>perfect design</span> , <span> clean code</span> &{' '}
-          <span>user interaction</span> gives me the skillset to set a new height{' '}
-          <span>web design world</span>.
+          The combination of my passion for pixel <span>perfect design</span> ,{' '}
+          <span> clean code</span> & <span>user interaction</span> gives me the skillset to set a
+          new height <span>web design world</span>.
         </motion.p>
       </div>
       <div data-scroll data-scroll-speed={0.1}>

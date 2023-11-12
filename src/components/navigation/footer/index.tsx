@@ -12,7 +12,7 @@ export default function Footer() {
     offset: ['start end', 'end end']
   });
   const x = useTransform(scrollYProgress, [0, 1], [0, 200]);
-  const y = useTransform(scrollYProgress, [0, 1], [100, 0]);
+  const y = useTransform(scrollYProgress, [0, 1], [-100, 0]);
   const rotate = useTransform(scrollYProgress, [0, 1], [120, 90]);
   return (
     <motion.footer
