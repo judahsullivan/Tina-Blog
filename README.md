@@ -1,13 +1,3 @@
-# [My Portfolio](https://judahsullivan.dev)
+# TinaCMs Blog
 
-## More Coming Soon
-
-### Build with
-
-- Framer-Motion
-
-- Tailwindcss
-
-- Nexjs
-
-- TinaCMS
+# Coming Soon
